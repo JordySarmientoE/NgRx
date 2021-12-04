@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
+import { Store } from '@ngrx/store';
 import { from, Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators'
+import { ItemModel } from '../../../core/models/Item.interface';
+import { addItem } from '../../../state/actions/items.actions';
 
 @Injectable({
   providedIn: 'root'
@@ -79,7 +82,5 @@ export class ShowCaseService {
       delay(1500)
     )
   }
-
-
 
 }

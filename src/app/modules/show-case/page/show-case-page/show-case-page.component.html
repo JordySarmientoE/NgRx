@@ -2,7 +2,7 @@
     <app-ui-search></app-ui-search>
 
     <app-ui-filter></app-ui-filter>
-
-
+    <p *ngIf="(loading$ | async)">Cargando...</p>
+    
     <app-ui-block-item></app-ui-block-item>
 </div>
